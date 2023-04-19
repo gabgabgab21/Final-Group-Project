@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=2]
+[gd_scene load_steps=74 format=2]
 
 [ext_resource path="res://Assets/tiles-wood.png" type="Texture" id=1]
 [ext_resource path="res://Assets/forest-level-4-sheet.png" type="Texture" id=2]
@@ -7,6 +7,8 @@
 [ext_resource path="res://Assets/skull.png" type="Texture" id=5]
 [ext_resource path="res://Assets/dead_tree-001.png" type="Texture" id=6]
 [ext_resource path="res://Camera.gd" type="Script" id=7]
+[ext_resource path="res://Assets/spooky.png" type="Texture" id=8]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=9]
 
 [sub_resource type="OccluderPolygon2D" id=56]
 polygon = PoolVector2Array( 0, 0, 72, 0, 72, 80, 0, 80 )
@@ -888,6 +890,11 @@ points = PoolVector2Array( 0, 0, 65, 0, 65, 65, 0, 65 )
 
 [node name="Game" type="Node2D"]
 
+[node name="Background_Image" type="Sprite" parent="."]
+position = Vector2( 961, 75 )
+scale = Vector2( 2.37125, 1.94833 )
+texture = ExtResource( 8 )
+
 [node name="Background" type="TileMap" parent="."]
 tile_set = SubResource( 55 )
 collision_layer = 0
@@ -904,13 +911,35 @@ tile_data = PoolIntArray( 131090, 1073741828, 0, 196611, 1073741828, 0, 262147, 
 
 [node name="Ground" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
+collision_layer = 2
 format = 1
 tile_data = PoolIntArray( -458752, 18, 0, -458723, 18, 0, -393216, 18, 0, -393187, 18, 0, -327680, 18, 0, -327651, 18, 0, -262144, 18, 0, -262115, 18, 0, -196608, 18, 0, -196579, 18, 0, -131072, 18, 0, -131043, 18, 0, -65536, 18, 0, -65507, 18, 0, 0, 18, 0, 29, 18, 0, 65536, 18, 0, 65565, 18, 0, 131072, 18, 0, 131101, 18, 0, 196608, 18, 0, 196637, 18, 0, 262144, 18, 0, 262173, 18, 0, 327680, 18, 0, 327709, 18, 0, 393216, 18, 0, 393245, 18, 0, 458752, 18, 0, 458781, 18, 0, 524288, 18, 0, 524317, 18, 0, 589824, 18, 0, 589825, 18, 0, 589826, 18, 0, 589827, 18, 0, 589828, 18, 0, 589829, 18, 0, 589830, 18, 0, 589831, 18, 0, 589832, 18, 0, 589833, 18, 0, 589834, 18, 0, 589835, 18, 0, 589836, 18, 0, 589837, 18, 0, 589838, 7, 0, 589839, 18, 0, 589840, 18, 0, 589841, 18, 0, 589842, 18, 0, 589843, 18, 0, 589844, 18, 0, 589845, 18, 0, 589846, 18, 0, 589847, 18, 0, 589848, 18, 0, 589849, 18, 0, 589850, 18, 0, 589851, 18, 0, 589852, 18, 0, 589853, 18, 0, 655360, 18, 0, 655361, 7, 0, 655363, 7, 0, 655364, 7, 0, 655365, 7, 0, 655366, 7, 0, 655367, 7, 0, 655368, 7, 0, 655369, 7, 0, 655370, 7, 0, 655371, 7, 0, 655372, 7, 0, 655373, 7, 0, 655374, 7, 0, 655375, 7, 0, 655376, 7, 0, 655377, 7, 0, 655378, 7, 0, 655379, 18, 0, 655380, 18, 0, 655381, 18, 0, 655382, 18, 0, 655383, 18, 0, 655384, 18, 0, 655385, 18, 0, 655386, 18, 0, 655387, 18, 0, 655388, 18, 0, 655389, 18, 0 )
 
 [node name="Platform" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
+collision_layer = 2
 format = 1
 tile_data = PoolIntArray( -131072, 18, 0, -65536, 18, 0, -65519, 19, 0, -65518, 19, 0, -65517, 19, 0, 0, 18, 0, 65536, 18, 0, 65542, 19, 0, 65543, 19, 0, 65544, 19, 0, 65545, 19, 0, 131072, 18, 0, 196608, 18, 0, 196610, 19, 0, 196611, 19, 0, 196619, 0, 0, 196626, 19, 0, 196627, 19, 0, 196628, 19, 0, 196629, 19, 0, 196630, 19, 0, 262144, 18, 0, 262155, 1, 0, 327680, 18, 0, 327691, 2, 0, 327694, 3, 0, 327695, 536870920, 0, 327696, 536870915, 0, 393216, 18, 0, 393221, 12, 0, 393222, 9, 0, 393223, 13, 0, 393239, 19, 0, 393240, 19, 0, 393241, 19, 0, 458752, 18, 0, 524288, 18, 0, 524302, 5, 0, 524303, 6, 0, 589824, 18, 0, 589825, 18, 0, 589826, 18, 0, 589827, 18, 0, 589828, 18, 0, 589829, 18, 0, 589830, 18, 0, 589831, 18, 0, 589832, 18, 0, 589833, 18, 0, 589834, 18, 0, 589835, 18, 0, 589836, 18, 0, 589837, 18, 0, 589838, 7, 0, 589839, 18, 0, 589840, 18, 0, 589841, 18, 0, 589842, 18, 0, 655360, 18, 0, 655361, 7, 0, 655362, 7, 0, 655363, 7, 0, 655364, 7, 0, 655365, 7, 0, 655366, 7, 0, 655367, 7, 0, 655368, 7, 0, 655369, 7, 0, 655370, 7, 0, 655371, 7, 0, 655372, 7, 0, 655373, 7, 0, 655374, 7, 0, 655375, 7, 0, 655376, 7, 0, 655377, 7, 0, 655378, 7, 0 )
 
+[node name="Player_Container" type="Node2D" parent="."]
+
+[node name="Player" parent="Player_Container" instance=ExtResource( 9 )]
+position = Vector2( 100, 300 )
+
+[node name="Enemy_Container" type="Node2D" parent="."]
+
+[node name="Coin_Container" type="Node2D" parent="."]
+
 [node name="Camera" type="Camera2D" parent="."]
+current = true
+limit_left = 0
+limit_top = 0
+limit_right = 1920
+limit_bottom = 630
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+drag_margin_left = 0.1
+drag_margin_top = 0.1
+drag_margin_right = 0.1
+drag_margin_bottom = 0.1
 script = ExtResource( 7 )
