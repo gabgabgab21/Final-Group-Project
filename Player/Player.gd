@@ -54,7 +54,7 @@ func set_animation(anim):
 	if $AnimatedSprite.frames.has_animation(anim): $AnimatedSprite.play(anim)
 	else: $AnimatedSprite.play()
 
-func is_on_floor():
+func is_on_ground():
 	var fl = $Floor.get_children()
 	for f in fl:
 		if f.is_colliding():
