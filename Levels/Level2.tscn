@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Player/Player_Container.gd" type="Script" id=1]
 [ext_resource path="res://Assets/forest-level-4-sheet.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Assets/spooky.png" type="Texture" id=8]
 [ext_resource path="res://Assets/tiles-skulls.png" type="Texture" id=9]
 [ext_resource path="res://Coin/Coin.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Assets/559389__szegvari__mystic-forest-ambient.wav" type="AudioStream" id=11]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -491,3 +492,7 @@ tile_data = PoolIntArray( -2686975, 536870912, 0, -2686974, 536870912, 0, -26869
 
 [node name="Coin" parent="Coin_Container" instance=ExtResource( 10 )]
 position = Vector2( 1310, -83 )
+
+[node name="Lvl 2 Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+autoplay = true
