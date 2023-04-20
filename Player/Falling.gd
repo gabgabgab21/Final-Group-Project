@@ -20,8 +20,6 @@ func physics_process(_delta):
 		return
 	if player.is_on_ceiling():
 		player.velocity.y = 0
-	if (player.is_on_right_wall() and Input.get_action_strength("right") > 0) or (player.is_on_left_wall() and Input.get_action_strength("left") > 0):
-		SM.set_state("Wall_Slide")
 	if Input.is_action_pressed("jump") and not player.double_jumped and SM.previous_state.name != "WallJump":
 		player.double_jumped = true
 		SM.set_state("Jumping")
