@@ -1,4 +1,4 @@
-[gd_scene load_steps=74 format=2]
+[gd_scene load_steps=79 format=2]
 
 [ext_resource path="res://Assets/tiles-wood.png" type="Texture" id=1]
 [ext_resource path="res://Assets/forest-level-4-sheet.png" type="Texture" id=2]
@@ -287,11 +287,26 @@ polygon = PoolVector2Array( 0, 0, 80, 0, 80, 90, 0, 90 )
 [sub_resource type="ConvexPolygonShape2D" id=63]
 points = PoolVector2Array( 0, 0, 80, 0, 80, 90, 0, 90 )
 
+[sub_resource type="ConvexPolygonShape2D" id=69]
+points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=70]
+points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=71]
+points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
+
 [sub_resource type="OccluderPolygon2D" id=9]
 polygon = PoolVector2Array( 0, 0, 65, 0, 65, 65, 0, 65 )
 
 [sub_resource type="ConvexPolygonShape2D" id=8]
 points = PoolVector2Array( 0, 0, 65, 0, 65, 65, 0, 65 )
+
+[sub_resource type="ConvexPolygonShape2D" id=72]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=73]
+points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 
 [sub_resource type="OccluderPolygon2D" id=11]
 polygon = PoolVector2Array( 0, 0, 65, 0, 65, 65, 0, 65 )
@@ -887,15 +902,164 @@ points = PoolVector2Array( 0, 0, 65, 0, 65, 65, 0, 65 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 25/z_index = 0
+26/name = "forest-level-4-sheet.png 26"
+26/texture = ExtResource( 2 )
+26/tex_offset = Vector2( 0, 0 )
+26/modulate = Color( 1, 1, 1, 1 )
+26/region = Rect2( 70, 3, 19, 31 )
+26/tile_mode = 0
+26/occluder_offset = Vector2( 0, 0 )
+26/navigation_offset = Vector2( 0, 0 )
+26/shape_offset = Vector2( 0, 0 )
+26/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+26/shape_one_way = false
+26/shape_one_way_margin = 0.0
+26/shapes = [  ]
+26/z_index = 0
+27/name = "spooky.png 27"
+27/texture = ExtResource( 8 )
+27/tex_offset = Vector2( 0, 0 )
+27/modulate = Color( 1, 1, 1, 1 )
+27/region = Rect2( 64, 0, 64, 64 )
+27/tile_mode = 0
+27/occluder_offset = Vector2( 0, 0 )
+27/navigation_offset = Vector2( 0, 0 )
+27/shape_offset = Vector2( 0, 0 )
+27/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+27/shape = SubResource( 69 )
+27/shape_one_way = false
+27/shape_one_way_margin = 1.0
+27/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 69 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+27/z_index = 0
+28/name = "spooky.png 28"
+28/texture = ExtResource( 8 )
+28/tex_offset = Vector2( 0, 0 )
+28/modulate = Color( 1, 1, 1, 1 )
+28/region = Rect2( 0, 448, 64, 64 )
+28/tile_mode = 0
+28/occluder_offset = Vector2( 0, 0 )
+28/navigation_offset = Vector2( 0, 0 )
+28/shape_offset = Vector2( 0, 0 )
+28/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+28/shape = SubResource( 70 )
+28/shape_one_way = false
+28/shape_one_way_margin = 1.0
+28/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 70 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+28/z_index = 0
+29/name = "spooky.png 29"
+29/texture = ExtResource( 8 )
+29/tex_offset = Vector2( 0, 0 )
+29/modulate = Color( 1, 1, 1, 1 )
+29/region = Rect2( 0, 0, 64, 64 )
+29/tile_mode = 0
+29/occluder_offset = Vector2( 0, 0 )
+29/navigation_offset = Vector2( 0, 0 )
+29/shape_offset = Vector2( 0, 0 )
+29/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+29/shape = SubResource( 71 )
+29/shape_one_way = false
+29/shape_one_way_margin = 1.0
+29/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 71 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+29/z_index = 0
+30/name = "spooky.png 30"
+30/texture = ExtResource( 8 )
+30/tex_offset = Vector2( 0, 0 )
+30/modulate = Color( 1, 1, 1, 1 )
+30/region = Rect2( -64, 64, 64, 64 )
+30/tile_mode = 0
+30/occluder_offset = Vector2( 0, 0 )
+30/navigation_offset = Vector2( 0, 0 )
+30/shape_offset = Vector2( 0, 0 )
+30/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+30/shape = SubResource( 72 )
+30/shape_one_way = false
+30/shape_one_way_margin = 1.0
+30/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 72 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+30/z_index = 0
+31/name = "spooky.png 31"
+31/texture = ExtResource( 8 )
+31/tex_offset = Vector2( 0, 0 )
+31/modulate = Color( 1, 1, 1, 1 )
+31/region = Rect2( 768, 0, 64, 64 )
+31/tile_mode = 0
+31/occluder_offset = Vector2( 0, 0 )
+31/navigation_offset = Vector2( 0, 0 )
+31/shape_offset = Vector2( 0, 0 )
+31/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+31/shape = SubResource( 73 )
+31/shape_one_way = false
+31/shape_one_way_margin = 1.0
+31/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 73 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+31/z_index = 0
+32/name = "spooky.png 32"
+32/texture = ExtResource( 8 )
+32/tex_offset = Vector2( 0, 0 )
+32/modulate = Color( 1, 1, 1, 1 )
+32/region = Rect2( 0, 512, 64, 64 )
+32/tile_mode = 0
+32/occluder_offset = Vector2( 0, 0 )
+32/navigation_offset = Vector2( 0, 0 )
+32/shape_offset = Vector2( 0, 0 )
+32/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+32/shape_one_way = false
+32/shape_one_way_margin = 0.0
+32/shapes = [  ]
+32/z_index = 0
+33/name = "spooky.png 33"
+33/texture = ExtResource( 8 )
+33/tex_offset = Vector2( 0, 0 )
+33/modulate = Color( 1, 1, 1, 1 )
+33/region = Rect2( 576, 448, 64, 64 )
+33/tile_mode = 0
+33/occluder_offset = Vector2( 0, 0 )
+33/navigation_offset = Vector2( 0, 0 )
+33/shape_offset = Vector2( 0, 0 )
+33/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+33/shape_one_way = false
+33/shape_one_way_margin = 0.0
+33/shapes = [  ]
+33/z_index = 0
 
 [node name="Game" type="Node2D"]
 
 [node name="Background_Image" type="Sprite" parent="."]
 position = Vector2( 961, 75 )
+rotation = -3.14159
 scale = Vector2( 2.37125, 1.94833 )
 texture = ExtResource( 8 )
 
 [node name="Background" type="TileMap" parent="."]
+rotation = 6.28319
 tile_set = SubResource( 55 )
 collision_layer = 0
 collision_mask = 0
@@ -911,15 +1075,15 @@ tile_data = PoolIntArray( 131090, 1073741828, 0, 196611, 1073741828, 0, 262147, 
 
 [node name="Ground" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
+show_collision = true
 collision_layer = 2
 format = 1
-tile_data = PoolIntArray( -458752, 18, 0, -458723, 18, 0, -393216, 18, 0, -393187, 18, 0, -327680, 18, 0, -327651, 18, 0, -262144, 18, 0, -262115, 18, 0, -196608, 18, 0, -196579, 18, 0, -131072, 18, 0, -131043, 18, 0, -65536, 18, 0, -65507, 18, 0, 0, 18, 0, 29, 18, 0, 65536, 18, 0, 65565, 18, 0, 131072, 18, 0, 131101, 18, 0, 196608, 18, 0, 196637, 18, 0, 262144, 18, 0, 262173, 18, 0, 327680, 18, 0, 327709, 18, 0, 393216, 18, 0, 393245, 18, 0, 458752, 18, 0, 458781, 18, 0, 524288, 18, 0, 524317, 18, 0, 589824, 18, 0, 589825, 18, 0, 589826, 18, 0, 589827, 18, 0, 589828, 18, 0, 589829, 18, 0, 589830, 18, 0, 589831, 18, 0, 589832, 18, 0, 589833, 18, 0, 589834, 18, 0, 589835, 18, 0, 589836, 18, 0, 589837, 18, 0, 589838, 7, 0, 589839, 18, 0, 589840, 18, 0, 589841, 18, 0, 589842, 18, 0, 589843, 18, 0, 589844, 18, 0, 589845, 18, 0, 589846, 18, 0, 589847, 18, 0, 589848, 18, 0, 589849, 18, 0, 589850, 18, 0, 589851, 18, 0, 589852, 18, 0, 589853, 18, 0, 655360, 18, 0, 655361, 7, 0, 655363, 7, 0, 655364, 7, 0, 655365, 7, 0, 655366, 7, 0, 655367, 7, 0, 655368, 7, 0, 655369, 7, 0, 655370, 7, 0, 655371, 7, 0, 655372, 7, 0, 655373, 7, 0, 655374, 7, 0, 655375, 7, 0, 655376, 7, 0, 655377, 7, 0, 655378, 7, 0, 655379, 18, 0, 655380, 18, 0, 655381, 18, 0, 655382, 18, 0, 655383, 18, 0, 655384, 18, 0, 655385, 18, 0, 655386, 18, 0, 655387, 18, 0, 655388, 18, 0, 655389, 18, 0 )
 
 [node name="Platform" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
 collision_layer = 2
 format = 1
-tile_data = PoolIntArray( -131072, 18, 0, -65536, 18, 0, -65519, 19, 0, -65518, 19, 0, -65517, 19, 0, 0, 18, 0, 65536, 18, 0, 65542, 19, 0, 65543, 19, 0, 65544, 19, 0, 65545, 19, 0, 131072, 18, 0, 196608, 18, 0, 196610, 19, 0, 196611, 19, 0, 196619, 0, 0, 196626, 19, 0, 196627, 19, 0, 196628, 19, 0, 196629, 19, 0, 196630, 19, 0, 262144, 18, 0, 262155, 1, 0, 327680, 18, 0, 327691, 2, 0, 327694, 3, 0, 327695, 536870920, 0, 327696, 536870915, 0, 393216, 18, 0, 393221, 12, 0, 393222, 9, 0, 393223, 13, 0, 393239, 19, 0, 393240, 19, 0, 393241, 19, 0, 458752, 18, 0, 524288, 18, 0, 524302, 5, 0, 524303, 6, 0, 589824, 18, 0, 589825, 18, 0, 589826, 18, 0, 589827, 18, 0, 589828, 18, 0, 589829, 18, 0, 589830, 18, 0, 589831, 18, 0, 589832, 18, 0, 589833, 18, 0, 589834, 18, 0, 589835, 18, 0, 589836, 18, 0, 589837, 18, 0, 589838, 7, 0, 589839, 18, 0, 589840, 18, 0, 589841, 18, 0, 589842, 18, 0, 655360, 18, 0, 655361, 7, 0, 655362, 7, 0, 655363, 7, 0, 655364, 7, 0, 655365, 7, 0, 655366, 7, 0, 655367, 7, 0, 655368, 7, 0, 655369, 7, 0, 655370, 7, 0, 655371, 7, 0, 655372, 7, 0, 655373, 7, 0, 655374, 7, 0, 655375, 7, 0, 655376, 7, 0, 655377, 7, 0, 655378, 7, 0 )
+tile_data = PoolIntArray( -1507322, -1073741816, 0, -1507321, 1610612769, 0, -1507320, 1610612769, 0, -1507319, -1610612728, 0, -1441786, -1073741816, 0, -1441785, 1610612769, 0, -1441784, 1610612769, 0, -1441783, -1610612728, 0, -1376250, -1073741816, 0, -1376249, 1610612769, 0, -1376248, 1610612769, 0, -1376247, -1610612728, 0, -1310714, -1073741816, 0, -1310713, 1610612769, 0, -1310712, 1610612769, 0, -1310711, -1610612728, 0, -1245178, -1073741816, 0, -1245177, 1610612769, 0, -1245176, 1610612769, 0, -1245175, -1610612728, 0, -1179642, -1073741816, 0, -1179641, 1610612769, 0, -1179640, 1610612769, 0, -1179639, -1610612728, 0, -1114106, -1073741816, 0, -1114105, 1610612769, 0, -1114104, 1610612769, 0, -1114103, -1610612728, 0, -1048570, -1073741816, 0, -1048569, 1610612769, 0, -1048568, 1610612769, 0, -1048567, -1610612728, 0, -983034, -1073741816, 0, -983033, 1610612769, 0, -983032, 1610612769, 0, -983031, -1610612728, 0, -917498, -1073741816, 0, -917497, 33, 0, -917496, 1610612769, 0, -917495, -1610612728, 0, -851962, -1073741816, 0, -851961, 33, 0, -851960, 1610612769, 0, -851959, -1610612728, 0, -786426, -1073741816, 0, -786425, 33, 0, -786424, 1610612769, 0, -786423, -1610612728, 0, -720890, -1073741816, 0, -720889, 33, 0, -720888, 1610612769, 0, -720887, -1610612728, 0, -655354, -1073741816, 0, -655353, 33, 0, -655352, 1610612769, 0, -655351, -1610612728, 0, -589824, -1610612718, 0, -589823, -1610612718, 0, -589822, -1610612718, 0, -589821, -1610612718, 0, -589820, -1610612718, 0, -589819, -1610612718, 0, -589818, -1073741816, 0, -589817, 33, 0, -589816, 1610612769, 0, -589815, -1610612728, 0, -589814, -1610612718, 0, -589813, -1610612718, 0, -589812, -1610612718, 0, -589811, -1610612718, 0, -589810, -1610612718, 0, -589809, -1610612718, 0, -589808, -1610612718, 0, -589807, -1610612718, 0, -589806, -1610612718, 0, -589805, -1610612718, 0, -589804, -1610612718, 0, -589803, -1610612718, 0, -589802, -1610612718, 0, -589801, -1610612718, 0, -589800, -1610612718, 0, -589799, -1610612718, 0, -589798, -1610612718, 0, -589797, -1610612718, 0, -589796, -1610612718, 0, -589795, -1610612718, 0, -589794, -1610612718, 0, -524288, 28, 0, -524259, 28, 0, -524258, 28, 0, -458752, 28, 0, -458723, 28, 0, -458722, 28, 0, -393216, 28, 0, -393187, 28, 0, -393186, 28, 0, -327680, 28, 0, -327651, 28, 0, -327650, 28, 0, -262144, 28, 0, -262115, 28, 0, -262114, 28, 0, -196608, 28, 0, -196579, 28, 0, -196578, 28, 0, -131072, 28, 0, -131043, 28, 0, -131042, 28, 0, -65536, 28, 0, -65519, 19, 0, -65518, 19, 0, -65517, 19, 0, -65507, 28, 0, -65506, 28, 0, 0, 28, 0, 29, 28, 0, 30, 28, 0, 65536, 28, 0, 65542, 19, 0, 65543, 19, 0, 65544, 19, 0, 65545, 19, 0, 65565, 28, 0, 65566, 28, 0, 131072, 28, 0, 131101, 28, 0, 131102, 28, 0, 196608, 28, 0, 196610, 19, 0, 196611, 19, 0, 196619, 0, 0, 196626, 19, 0, 196627, 19, 0, 196628, 19, 0, 196629, 19, 0, 196630, 19, 0, 196637, 28, 0, 196638, 28, 0, 262144, 28, 0, 262155, 1, 0, 262173, 28, 0, 262174, 28, 0, 327680, 28, 0, 327691, 2, 0, 327694, 3, 0, 327695, 536870920, 0, 327696, 536870915, 0, 327709, 28, 0, 327710, 28, 0, 393216, 28, 0, 393221, 12, 0, 393222, 9, 0, 393223, 13, 0, 393239, 19, 0, 393240, 19, 0, 393241, 19, 0, 393245, -1610612708, 0, 393246, 28, 0, 458752, 28, 0, 458781, -1610612708, 0, 458782, 28, 0, 524288, 28, 0, 524302, 5, 0, 524303, 6, 0, 524317, -1610612708, 0, 524318, 28, 0, 589824, 28, 0, 589853, 28, 0, 589854, 28, 0, 655360, 27, 0, 655361, 27, 0, 655362, 27, 0, 655363, 27, 0, 655364, 27, 0, 655365, 27, 0, 655366, 27, 0, 655367, 27, 0, 655368, 27, 0, 655369, 27, 0, 655370, 27, 0, 655371, 27, 0, 655372, 27, 0, 655373, 27, 0, 655374, 27, 0, 655375, 27, 0, 655376, 27, 0, 655377, 27, 0, 655378, 27, 0, 655379, 27, 0, 655380, 27, 0, 655381, 27, 0, 655382, 27, 0, 655383, 27, 0, 655384, 27, 0, 655385, 27, 0, 655386, 27, 0, 655387, 27, 0, 655388, 27, 0, 655389, 27, 0, 655390, 27, 0 )
 
 [node name="Player_Container" type="Node2D" parent="."]
 
