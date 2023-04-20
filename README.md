@@ -30,6 +30,9 @@ Assets:
 
 Onix Games - Game Art
 
+Music: Free Sound
+Artists: Seth_Makes_Sounds & szegvari
+
 
 
 ## References
