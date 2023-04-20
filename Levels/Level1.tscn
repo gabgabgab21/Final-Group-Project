@@ -346,6 +346,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 12/z_index = 0
 
 [node name="Game" type="Node2D"]
+position = Vector2( 59, 67 )
 
 [node name="Background" type="Sprite" parent="."]
 position = Vector2( 508, 236 )
@@ -377,8 +378,8 @@ current = true
 process_mode = 0
 limit_left = -250
 limit_top = -275
-limit_right = 1340
-limit_bottom = 830
+limit_right = 1400
+limit_bottom = 900
 
 [node name="Area2D" type="Area2D" parent="."]
 script = ExtResource( 4 )
