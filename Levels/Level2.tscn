@@ -490,4 +490,8 @@ tile_data = PoolIntArray( -2686975, 536870912, 0, -2686974, 536870912, 0, -26869
 [node name="Coin_Container" type="Node2D" parent="."]
 
 [node name="Coin" parent="Coin_Container" instance=ExtResource( 10 )]
+<<<<<<< Updated upstream
 position = Vector2( 1310, -83 )
+=======
+position = Vector2( 1314, -99 )
+>>>>>>> Stashed changes
